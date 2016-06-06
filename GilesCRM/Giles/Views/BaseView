@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GilesCRM.Giles.Views
+{
+    [DataContract]
+    [KnownType(typeof(DataView))]
+    [KnownType(typeof(SearchView))]
+    class BaseView {
+      [DataMember]
+      protected string tableName;
+      [DataMember]
+      protected bool hasChildren;
+      [DataMember]
+      LinkedList<BaseView> children;
+    }
+}
