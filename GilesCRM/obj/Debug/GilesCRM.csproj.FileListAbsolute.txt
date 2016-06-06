@@ -1,0 +1,1 @@
+e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\bin\Debug\GilesCRM.exe.config
