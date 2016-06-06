@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace GilesCRM.Giles
 {
-    class DataView
+    class DataView : BaseView
     {
-
+        
     }
 }
