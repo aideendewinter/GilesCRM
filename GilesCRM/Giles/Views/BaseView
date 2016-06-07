@@ -10,11 +10,26 @@ namespace GilesCRM.Giles.Views
     [KnownType(typeof(DataView))]
     [KnownType(typeof(SearchView))]
     class BaseView {
-      [DataMember]
-      protected string tableName;
-      [DataMember]
-      protected bool hasChildren;
-      [DataMember]
-      LinkedList<BaseView> children;
+        [DataMember]
+        protected string tableName;
+        [DataMember]
+        protected Dictionary<string, BaseView> children;
+        [DataMember]
+        protected string xamlFilename;
+        
+        public FrameworkElement GetUI() {
+            FrameworkElement element;
+            FileStream s = new FileStream(xamlFilename, FileMode.Open);
+            element = (FrameworkElement)XamlReader.Load(s);
+            s.Close();
+            if (tableName != "") {
+                // TO-DO: Bind data.
+            }
+            
+            foreach(KeyValuePair<string, BaseView> child in children) {
+                element.FindName(child.Key).AddLogicalChild(child.Value.GetUI());
+            }
+            return element;
+        }
     }
 }
