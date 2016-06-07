@@ -17,6 +17,12 @@ namespace GilesCRM.Giles.Application
             DataContractJsonSerializer ser = new DataContractJsonSerializer(typeof(SettingsData));
             mySettings = (SettingsData)ser.ReadObject(stream);
         }
+        public SettingsManager(string viewsFolder, string defaultView, ConnectionData defaultConnection) {
+            mySettings = new SettingsData();
+            mySettings.viewsFolderPathname = viewsFolder;
+            mySettings.defaultViewFilename = defaultView;
+            mySettings.defaultConnection = defaultConnection;
+        }
         
         public string getDefaultView() {
             return mySettings.viewsFolderPathname + mySettings.defaultViewFilename;
