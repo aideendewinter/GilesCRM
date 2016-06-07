@@ -19,29 +19,29 @@ namespace GilesCRM.Giles.Application
         }
         
         public string getDefaultView() {
-          return mySettings.viewsFolderPathname + mySettings.defaultViewFilename;
+            return mySettings.viewsFolderPathname + mySettings.defaultViewFilename;
         }
         
         public ConnectionData getDefaultConnection() {
-          return mySettings.defaultConnection;
+            return mySettings.defaultConnection;
         }
     }
     [DataContract}
     public class ConnectionData {
-      [DataMember]
-      string databaseName;
-      [DataMember]
-      string userName;
-      [DataMember]
-      string password;
+        [DataMember]
+        public string databaseName;
+        [DataMember]
+        public string userName;
+        [DataMember]
+        public string password;
     }
     [DataContract]
     class SettingsData {
-      [DataMember]
-      public ConnectionData defaultConnection;
-      [DataMember]
-      public string viewsFolderPathname;
-      [DataMember]
-      public string defaultViewFilename;
+        [DataMember]
+        public ConnectionData defaultConnection;
+        [DataMember]
+        public string viewsFolderPathname;
+        [DataMember]
+        public string defaultViewFilename;
     }
 }
