@@ -15,7 +15,7 @@
                     <MenuItem Header="_Exit" />
                 </MenuItem>
             </Menu>
-            <ContentControl></ContentControl>
+            <ContentControl x:Name="Content"></ContentControl>
         </DockPanel>
     </Grid>
 </Window>

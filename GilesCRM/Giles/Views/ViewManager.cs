@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using GilesCRM.Giles.Application;
+using System.IO;
+using System.Runtime.Serialization.Json;
+using System;
 
 namespace GilesCRM.Giles.Views
 {
@@ -15,6 +14,12 @@ namespace GilesCRM.Giles.Views
             FileStream stream = new FileStream(defaultViewFilename, FileMode.Open);
             DataContractJsonSerializer ser = new DataContractJsonSerializer(typeof(BaseView));
             currentView = (BaseView)ser.ReadObject(stream);
+            UpdateView();
+        }
+
+        private void UpdateView()
+        {
+           // TO-DO: attach current view to main window xaml.
         }
     }
 }
