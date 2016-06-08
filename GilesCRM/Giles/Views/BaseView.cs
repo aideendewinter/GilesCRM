@@ -4,6 +4,7 @@ using System.Windows.Controls;
 using System.Windows.Markup;
 using System.Windows;
 using System.IO;
+using GilesCRM.Giles.App;
 
 namespace GilesCRM.Giles.Views
 {
@@ -20,9 +21,9 @@ namespace GilesCRM.Giles.Views
         
         protected FrameworkElement myUI;
         
-        public FrameworkElement GetUI() {
+        public FrameworkElement GetUI(SettingsManager settings) {
             if (myUI == null) {
-                FileStream s = new FileStream(xamlFilename, FileMode.Open);
+                FileStream s = new FileStream(settings.getViewFolder() + xamlFilename, FileMode.Open);
                 myUI = (FrameworkElement)XamlReader.Load(s);
                 s.Close();
                 if (tableName != "") {
@@ -30,7 +31,7 @@ namespace GilesCRM.Giles.Views
                 }
             
                 foreach(KeyValuePair<string, BaseView> child in children) {
-                    ((ContentControl)myUI.FindName(child.Key)).Content = child.Value.GetUI();
+                    ((ContentControl)myUI.FindName(child.Key)).Content = child.Value.GetUI(settings);
                 }
             }
             return myUI;
