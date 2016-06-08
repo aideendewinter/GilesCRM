@@ -1,1 +1,15 @@
-
+{
+  "tableName": null,
+  "children": [
+    {"Key": "Left", "Value": {
+      "tableName": null,
+      "children": null,
+      "xamlFilename": "search.xaml"
+    }}, {"Key" : "Right", "Value": {
+      "tableName": null,
+      "children": null,
+      "xamlFilename": "customer.xaml"
+    }}
+  ],
+  "xamlFilename": "default.xaml"
+}
