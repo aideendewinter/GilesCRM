@@ -24,6 +24,10 @@ namespace GilesCRM.Giles.App
             mySettings.defaultConnection = defaultConnection;
         }
         
+        public string getViewsFolder() {
+            return mySettings.viewsFolderPathname;
+        }
+        
         public string getDefaultView() {
             return mySettings.viewsFolderPathname + mySettings.defaultViewFilename;
         }
