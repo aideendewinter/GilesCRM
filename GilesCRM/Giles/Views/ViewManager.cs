@@ -20,7 +20,6 @@ namespace GilesCRM.Giles.Views
         
         private void UpdateView()
         {
-            // TO-DO: attach current view to main window xaml.
             ((ContentControl)Application.MainWindow.Find("Content")).Content = currentView.GetUI();
         }
     }
