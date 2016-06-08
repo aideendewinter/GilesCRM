@@ -1,4 +1,4 @@
-﻿using GilesCRM.Giles.Application;
+﻿using GilesCRM.Giles.App;
 using System.IO;
 using System.Runtime.Serialization.Json;
 using System;
@@ -20,7 +20,7 @@ namespace GilesCRM.Giles.Views
         
         private void UpdateView()
         {
-            ((ContentControl)Application.MainWindow.Find("Content")).Content = currentView.GetUI();
+            ((ContentControl)Application.Current.MainWindow.FindName("Content")).Content = currentView.GetUI();
         }
     }
 }
