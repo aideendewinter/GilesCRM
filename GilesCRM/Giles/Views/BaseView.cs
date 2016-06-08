@@ -18,19 +18,22 @@ namespace GilesCRM.Giles.Views
         [DataMember]
         protected string xamlFilename;
         
+        protected FrameworkElement myUI;
+        
         public FrameworkElement GetUI() {
-            FrameworkElement element;
-            FileStream s = new FileStream(xamlFilename, FileMode.Open);
-            element = (FrameworkElement)XamlReader.Load(s);
-            s.Close();
-            if (tableName != "") {
-                // TO-DO: Bind data.
-            }
+            if (myUI == null) {
+                FileStream s = new FileStream(xamlFilename, FileMode.Open);
+                myUI = (FrameworkElement)XamlReader.Load(s);
+                s.Close();
+                if (tableName != "") {
+                    // TO-DO: Bind data.
+                }
             
-            foreach(KeyValuePair<string, BaseView> child in children) {
-                ((ContentControl)element.FindName(child.Key)).Content = child.Value.GetUI();
+                foreach(KeyValuePair<string, BaseView> child in children) {
+                    ((ContentControl)myUI.FindName(child.Key)).Content = child.Value.GetUI();
+                }
             }
-            return element;
+            return myUI;
         }
     }
 }
