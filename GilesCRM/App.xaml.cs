@@ -18,9 +18,9 @@ namespace GilesCRM
             // Create dummy settings object for testing.
             ConnectionData connData = new ConnectionData();
             
-            SettingsManager settings = new SettingsManager(Environment.SpecialFolder.ApplicationData 
-                + settingsFolder + "/views/", "default.json", connData);
-                
+            SettingsManager settings = new SettingsManager(//Environment.SpecialFolder.ApplicationData + 
+                settingsFolder + "/Views/", "default.json", connData);
+            
             ViewManager viewManager = new ViewManager(settings);
         }
     }
