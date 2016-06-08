@@ -2,10 +2,12 @@
   "tableName": null,
   "children": [
     {"Key": "Left", "Value": {
+      "__type" : "SearchView",
       "tableName": null,
       "children": null,
       "xamlFilename": "search.xaml"
     }}, {"Key" : "Right", "Value": {
+      "__type" : "DataView",
       "tableName": null,
       "children": null,
       "xamlFilename": "customer.xaml"
