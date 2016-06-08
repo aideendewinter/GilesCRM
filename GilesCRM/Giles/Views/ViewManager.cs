@@ -2,6 +2,7 @@
 using System.IO;
 using System.Runtime.Serialization.Json;
 using System;
+using System.Windows;
 
 namespace GilesCRM.Giles.Views
 {
@@ -16,10 +17,11 @@ namespace GilesCRM.Giles.Views
             currentView = (BaseView)ser.ReadObject(stream);
             UpdateView();
         }
-
+        
         private void UpdateView()
         {
-           // TO-DO: attach current view to main window xaml.
+            // TO-DO: attach current view to main window xaml.
+            ((ContentControl)Application.MainWindow.Find("Content")).Content = currentView.GetUI();
         }
     }
 }
