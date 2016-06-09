@@ -21,7 +21,7 @@ namespace GilesCRM.Giles.Views
         
         protected FrameworkElement myUI;
         
-        public FrameworkElement GetUI(SettingsManager settings) {
+        public virtual FrameworkElement GetUI(SettingsManager settings) {
             if (myUI == null) {
                 FileStream s = new FileStream(settings.getViewsFolder() + xamlFilename, FileMode.Open);
                 myUI = (FrameworkElement)XamlReader.Load(s);
