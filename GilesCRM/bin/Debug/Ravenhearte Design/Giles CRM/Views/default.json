@@ -5,12 +5,17 @@
       "__type" : "SearchView:#GilesCRM.Giles.Views",
       "tableName": null,
       "children": null,
-      "xamlFilename": "search.xaml"
+      "xamlFilename": "customer_search.xaml"
+    }}, {"Key": "Bottom", "Value": {
+      "__type" : "DataView:#GilesCRM.Giles.Views",
+      "tableName": null,
+      "children": null,
+      "xamlFilename": "searchresults.xaml"
     }}, {"Key" : "Right", "Value": {
       "__type" : "DataView:#GilesCRM.Giles.Views",
       "tableName": null,
       "children": null,
-      "xamlFilename": "customer.xaml"
+      "xamlFilename": "customer_data.xaml"
     }}
   ],
   "xamlFilename": "default.xaml"
