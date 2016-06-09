@@ -1,0 +1,7 @@
+<StackPanel>
+  <Button>Search</Button>
+  <Label Content="_Company Name:" Target="{Binding ElementName=txtCompanyName}" />
+  <TextBox Name="txtCompanyName" />
+  <Label Content="_Contact Name:" Target="{Binding ElementName=txtContactName}" />
+  <TextBox Name="txtContactName" />
+</StackPanel>
