@@ -64,7 +64,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Giles\SettingsManager.cs" />
+    <Compile Include="Giles\App\ConnectionManager.cs" />
+    <Compile Include="Giles\App\SettingsManager.cs" />
     <Compile Include="Giles\Views\BaseView.cs" />
     <Compile Include="Giles\Views\DataView.cs" />
     <Compile Include="Giles\Views\SearchView.cs" />

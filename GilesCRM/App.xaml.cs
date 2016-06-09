@@ -1,3 +1,5 @@
+using GilesCRM.Giles.App;
+using GilesCRM.Giles.Views;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -14,12 +16,12 @@ namespace GilesCRM
     public partial class App : Application
     {
         public App() {
-            string settingsFolder = "/Ravenhearte Design/Giles CRM";
+            string settingsFolder = "Ravenhearte Design/Giles CRM";
             // Create dummy settings object for testing.
             ConnectionData connData = new ConnectionData();
             
-            SettingsManager settings = new SettingsManager(//Environment.SpecialFolder.ApplicationData + 
-                settingsFolder + "/Views/", "default.json", connData);
+            SettingsManager settings = new SettingsManager(""//Environment.SpecialFolder.ApplicationData
+                + settingsFolder + "/Views/", "default.json", connData);
             
             ViewManager viewManager = new ViewManager(settings);
         }

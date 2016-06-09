@@ -3,6 +3,7 @@ using System.IO;
 using System.Runtime.Serialization.Json;
 using System;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace GilesCRM.Giles.Views
 {
@@ -15,12 +16,12 @@ namespace GilesCRM.Giles.Views
             FileStream stream = new FileStream(defaultViewFilename, FileMode.Open);
             DataContractJsonSerializer ser = new DataContractJsonSerializer(typeof(BaseView));
             currentView = (BaseView)ser.ReadObject(stream);
-            UpdateView();
+            UpdateView(settings);
         }
         
-        private void UpdateView()
+        private void UpdateView(SettingsManager settings)
         {
-            ((ContentControl)Application.Current.MainWindow.FindName("Content")).Content = currentView.GetUI();
+            ((ContentControl)Application.Current.MainWindow.FindName("ViewContent")).Content = currentView.GetUI(settings);
         }
     }
 }

@@ -23,7 +23,7 @@ namespace GilesCRM.Giles.App
             mySettings.defaultViewFilename = defaultView;
             mySettings.defaultConnection = defaultConnection;
         }
-        
+
         public string getViewsFolder() {
             return mySettings.viewsFolderPathname;
         }
@@ -36,7 +36,7 @@ namespace GilesCRM.Giles.App
             return mySettings.defaultConnection;
         }
     }
-    [DataContract}
+    [DataContract]
     public class ConnectionData {
         [DataMember]
         public string databaseName;

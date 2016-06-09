@@ -23,7 +23,7 @@ namespace GilesCRM.Giles.Views
         
         public FrameworkElement GetUI(SettingsManager settings) {
             if (myUI == null) {
-                FileStream s = new FileStream(settings.getViewFolder() + xamlFilename, FileMode.Open);
+                FileStream s = new FileStream(settings.getViewsFolder() + xamlFilename, FileMode.Open);
                 myUI = (FrameworkElement)XamlReader.Load(s);
                 s.Close();
                 if (tableName != "") {

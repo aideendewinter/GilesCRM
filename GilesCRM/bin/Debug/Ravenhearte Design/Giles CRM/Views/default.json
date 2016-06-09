@@ -2,12 +2,12 @@
   "tableName": null,
   "children": [
     {"Key": "Left", "Value": {
-      "__type" : "SearchView",
+      "__type" : "GilesCRM.Giles.Views.SearchView",
       "tableName": null,
       "children": null,
       "xamlFilename": "search.xaml"
     }}, {"Key" : "Right", "Value": {
-      "__type" : "DataView",
+      "__type" : "GilesCRM.Giles.Views.DataView",
       "tableName": null,
       "children": null,
       "xamlFilename": "customer.xaml"
