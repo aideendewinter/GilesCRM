@@ -15,7 +15,7 @@ namespace GilesCRM.Giles.Views
             // TO-DO: Error handling.
             FileStream stream = new FileStream(defaultViewFilename, FileMode.Open);
             DataContractJsonSerializer ser = new DataContractJsonSerializer(typeof(BaseView));
-            currentView = (BaseView)ser.ReadObject(stream);
+            currentView = ser.ReadObject(stream);
             UpdateView(settings);
         }
         
