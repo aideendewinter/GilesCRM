@@ -1,0 +1,8 @@
+<DockPanel>
+  <StackPanel DockPanel.Dock="Left">
+    <Label Content="_Company Name:" Target="{Binding ElementName=dataCompanyName}" />
+    <TextBox Name="dataCompanyName" />
+    <Label Content="Contact _Name:" Target="{Binding ElementName=dataContactName}" />
+    <TextBox Name="dataContactName" />
+  </StackPanel>
+</DockPanel>
