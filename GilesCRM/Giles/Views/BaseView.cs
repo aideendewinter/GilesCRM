@@ -26,9 +26,6 @@ namespace GilesCRM.Giles.Views
                 FileStream s = new FileStream(settings.getViewsFolder() + xamlFilename, FileMode.Open);
                 myUI = (FrameworkElement)XamlReader.Load(s);
                 s.Close();
-                if (tableName != "") {
-                    // TO-DO: Bind data.
-                }
             
                 foreach(KeyValuePair<string, BaseView> child in children) {
                     ((ContentControl)myUI.FindName(child.Key)).Content = child.Value.GetUI(settings);
