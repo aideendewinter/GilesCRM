@@ -4,5 +4,4 @@
   <TextBox Name="searchCompanyName" />
   <Label Content="Contact _Name:" Target="{Binding ElementName=searchContactName}" />
   <TextBox Name="searchContactName" />
-  <DataGrid Name="searchResults"/>
 </StackPanel>
