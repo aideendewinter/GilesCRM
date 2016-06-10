@@ -13,7 +13,7 @@ namespace GilesCRM.Giles.Views
         [DataMember]
         protected Dictionary<string, string> dataBindings;
         
-        public override FrameworkElement GetUI(SettingsManager settings) {
+        public override FrameworkElement GetUI(SettingsManager settings, NpgsqlConnection connection) {
             if (myUI == null) {
                 base(settings);
                 // Bind data
