@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace GilesCRM.Giles.Views
 {
     [DataContract]
-    class SearchView
+    class SearchView : BaseView
     {
     }
 }

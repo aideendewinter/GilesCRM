@@ -1,5 +1,4 @@
 e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\bin\Debug\GilesCRM.exe.config
-e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\obj\Debug\GilesCRM.csprojResolveAssemblyReference.cache
 e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\obj\Debug\MainWindow.g.cs
 e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\obj\Debug\App.g.cs
 e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\obj\Debug\GilesCRM_MarkupCompile.cache
@@ -12,3 +11,12 @@ e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\obj\Debug\GilesCRM.Pr
 e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\obj\Debug\GilesCRM.csproj.GenerateResource.Cache
 e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\obj\Debug\GilesCRM.exe
 e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\obj\Debug\GilesCRM.pdb
+e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\bin\Debug\EntityFramework.dll
+e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\bin\Debug\EntityFramework.SqlServer.dll
+e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\bin\Debug\EntityFramework6.Npgsql.dll
+e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\bin\Debug\Npgsql.dll
+e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\bin\Debug\EntityFramework.xml
+e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\bin\Debug\EntityFramework.SqlServer.xml
+e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\bin\Debug\EntityFramework6.Npgsql.xml
+e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\bin\Debug\Npgsql.xml
+e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\obj\Debug\GilesCRM.csprojResolveAssemblyReference.cache

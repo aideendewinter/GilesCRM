@@ -1,4 +1,6 @@
-<DockPanel>
+<DockPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:GilesCRM">
   <StackPanel DockPanel.Dock="Left">
     <Label Content="_Company Name:" Target="{Binding ElementName=dataCompanyName}" />
     <TextBox Name="dataCompanyName" />

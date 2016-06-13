@@ -16,13 +16,20 @@ namespace GilesCRM
     public partial class App : Application
     {
         public App() {
+        }
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            // Create the startup window
+            MainWindow wnd = new MainWindow();
+            wnd.Show();
+
             string settingsFolder = "Ravenhearte Design/Giles CRM";
             // Create dummy settings object for testing.
             ConnectionData connData = new ConnectionData();
-            
+
             SettingsManager settings = new SettingsManager(""//Environment.SpecialFolder.ApplicationData
                 + settingsFolder + "/Views/", "default.json", connData);
-            
+
             ViewManager viewManager = new ViewManager(settings);
         }
     }

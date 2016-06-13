@@ -1,9 +1,11 @@
-﻿using System;
+﻿using GilesCRM.Giles.App;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace GilesCRM.Giles.Views
 {
@@ -15,7 +17,7 @@ namespace GilesCRM.Giles.Views
         
         public override FrameworkElement GetUI(SettingsManager settings) {
             if (myUI == null) {
-                base(settings);
+                base.GetUI(settings);
                 // Bind data
             }
             return myUI;

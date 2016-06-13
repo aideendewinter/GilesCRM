@@ -7,6 +7,7 @@ using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
+using System.Windows;
 
 namespace GilesCRM.Giles.App
 {
@@ -38,7 +39,7 @@ namespace GilesCRM.Giles.App
     }
     
     ~ConnectionManager() {
-      defaultConnection.close();
+      defaultConnection.Close();
     }
   }
 }
