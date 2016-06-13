@@ -5,6 +5,7 @@ using System.Windows.Markup;
 using System.Windows;
 using System.IO;
 using GilesCRM.Giles.App;
+using Npgsql;
 
 namespace GilesCRM.Giles.Views
 {
@@ -30,7 +31,7 @@ namespace GilesCRM.Giles.Views
                 {
                     foreach (KeyValuePair<string, BaseView> child in children)
                     {
-                        ((ContentControl)myUI.FindName(child.Key)).Content = child.Value.GetUI(settings);
+                        ((ContentControl)myUI.FindName(child.Key)).Content = child.Value.GetUI(settings, connection);
                     }
                 }
             }

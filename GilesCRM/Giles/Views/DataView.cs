@@ -1,4 +1,5 @@
 ﻿using GilesCRM.Giles.App;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace GilesCRM.Giles.Views
         
         public override FrameworkElement GetUI(SettingsManager settings, NpgsqlConnection connection) {
             if (myUI == null) {
-                base.GetUI(settings);
+                base.GetUI(settings, connection);
                 // Bind data
             }
             return myUI;

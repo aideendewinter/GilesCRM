@@ -4,6 +4,7 @@ using System.Runtime.Serialization.Json;
 using System;
 using System.Windows;
 using System.Windows.Controls;
+using Npgsql;
 
 namespace GilesCRM.Giles.Views
 {

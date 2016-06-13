@@ -19,4 +19,3 @@ e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\bin\Debug\EntityFrame
 e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\bin\Debug\EntityFramework.SqlServer.xml
 e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\bin\Debug\EntityFramework6.Npgsql.xml
 e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\bin\Debug\Npgsql.xml
-e:\documents\visual studio 2015\Projects\GilesCRM\GilesCRM\obj\Debug\GilesCRM.csprojResolveAssemblyReference.cache
