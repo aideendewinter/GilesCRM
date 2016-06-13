@@ -29,8 +29,13 @@ namespace GilesCRM
 
             SettingsManager settings = new SettingsManager(""//Environment.SpecialFolder.ApplicationData
                 + settingsFolder + "/Views/", "default.json", connData);
+<<<<<<< HEAD
 
             ViewManager viewManager = new ViewManager(settings);
+=======
+            ConnectionManager connections = new ConnectionManager(settings);
+            ViewManager viewManager = new ViewManager(settings, connections);
+>>>>>>> origin/master
         }
     }
 }
